@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#bagua-wrapper{
+    width: 100vw;
+    height:100vh;
+    background-color: #dddd;
+    position: relative;
+    /* 居中 */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+#bagua{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute;
+    overflow: hidden;
+    /* transform: all 3s ease; */
+}
+#bagua>div:nth-child(1){
+    width: 200px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+}
+#bagua>div:nth-child(2){
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position:absolute;
+    left:100px;
+    background-color:black;
+}
+#bagua>div:nth-child(3){
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:white;
+    position:absolute;
+    top:75px;
+    left: 200px;
+}
+#bagua>div:nth-child(4){
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    position:absolute;
+    right: 100px;
+    bottom: 0;
+    background-color: white;
+}
+#bagua>div:nth-child(5){
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    position:absolute;
+    bottom: 75px;
+    right: 200px;
+    background-color:black;
+}
+#miaoshu{
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 3em;
+    bottom:60px;
+}
