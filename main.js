@@ -1,4 +1,6 @@
+//获取八卦
 var bagua = document.getElementById("bagua");
+
 let start, previousTimeStamp;
 let done = false;
 let ids;
@@ -14,7 +16,7 @@ function step(timestamp) {
 	if (currRotate > 360) {
 		currRotate = 0;
 	}
-	bagua.style.transform = `rotate(${currRotate + 0.01}deg)`;
+	bagua.style.transform = `rotate(${Number(currRotate) + 0.5}deg)`;
 	if (done) {
 		ids = window.requestAnimationFrame(step);
 	}
